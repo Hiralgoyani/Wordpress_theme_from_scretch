@@ -1,0 +1,748 @@
+/*
+Theme Name: Gym Child
+Theme URL: http://hostinger-tutorials.com
+Description: Twenty Seventeen Child Theme
+Author: John Doe
+Author URL: http://hostinger-tutorials.com
+Template: twentyseventeen
+Version: 1.0.0
+Tags: restorant, pizza
+Text Domain: gym
+*/
+
+:root{
+	--mainfont : 'Raleway', sans-serif;
+	--textFont: 'Open Sans', sans-serif;
+	--SecondaryFont: 'Staatliches', cursive;
+
+	/* Colors */
+	--primary : #FF5B00;
+	--darkGray : #2F2E2E;
+	--lightGray: #EBEBEB;
+
+	--white : #ffffff;
+	--black : #000000;
+}
+
+html{
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+*, *:before, *:after{
+	box-sizing: inherit;
+}
+
+body{
+	font-family: var(--textFont);
+	font-size: 1.6rem;
+	line-height: 2;
+}
+
+/** Headings **/
+h1,h2,h3{
+	font-family: var(--mainfont);
+	margin: .5rem 0;
+	line-height: 1.2;
+}
+h1{
+	font-size: 6rem;
+}
+h2{
+	font-size: 4.8rem;
+	color: var(--primary);
+}
+h3{
+	font-size: 3.6rem; 
+}
+
+
+/** Globals **/
+a{
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.container{
+	max-width: 120rem;
+	width: 95%;
+	margin: 0 auto;
+}
+.logo img{
+	max-width: 80%;
+	height: auto;
+}
+
+/** Utilities **/
+
+/** Header */
+.logo{
+	display: flex;
+	justify-content: center;
+}
+.site-header{
+	background-color: var(--darkGray);
+	padding: 2rem 0;
+}
+.navigation-bar{
+	display: flex;
+	justify-content: space-between;
+}
+.main-menu .current_page_item{
+	border-bottom: 3px solid var(--primary);
+}
+
+/** front header **/
+body.home .header-grid{
+	height: 100vh;
+	min-height: 65rem;
+	padding-top: 2rem;
+}
+.tagline{
+	color: var(--white);
+	margin-top: 10rem;
+}
+.tagline h2{
+	color: var(--white);
+	text-transform: uppercase;
+	font-size: 4rem;
+}
+
+
+/** Footer */
+.site-footer{
+	border-top: 2px solid var(--lightGray);
+	padding: 2rem 0;
+}
+.footer-content{
+	display: flex;
+	justify-content: space-between;
+}
+.copyright{
+	text-align: center;
+}
+
+.slicknav_menu {
+    background: #2f2e2e ;
+}
+.slicknav_nav a{
+	font-size: 2rem;
+	text-align: center;
+	font-family: var(--mainfont);
+}
+.slicknav_nav a:hover{
+	background-color: transparent;
+	color: var(--primary);
+}
+.slicknav_btn{
+	background-color: var(--primary);
+}
+.text-center{
+	text-align: center;
+}
+.text-primary{
+	color: var(--primary);
+}
+.section{
+	padding: 3rem 0;
+}
+main.container.page.section.no-sidebars.classes-index {
+    max-width: 80%;
+}
+.page.no-sidebars{
+	max-width: 80rem;
+	margin: 0 auto;
+}
+.featured-image{
+	margin-bottom: 2rem;
+}
+.page h1{
+	margin-bottom: 3rem;
+}
+.widget.custom-sidebar h3 {
+    font-size: 16px;
+}
+.widget.custom-sidebar {
+    font-size: 14px;
+}
+
+
+/** Classes list */
+.classes-list{
+	margin-top: 4rem;
+}
+.card{
+	margin-bottom: 4rem;
+}
+
+.gym-class.card.gradient img {
+    width: 100%;
+    height: 100%;
+}
+.card-content h3 {
+    color: white;
+    font-size: 28px;
+    padding-left: 10px;
+}
+.card img{
+	display: block;
+}
+.card .card-content{
+	padding: 3rem 0;
+	background-color: rgba(0, 0, 0, 0.54);
+    /*position: absolute;*/
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    left: 0;
+}
+.card .card-content a{
+	color: var(--black);
+}
+.card-content p {
+    color: var(--primary);
+    margin: 0 0 0px 10px;
+}
+
+/** single class */
+p.content-class{
+	font-family: 700;
+	font-family: var(--SecondaryFont);
+	font-size: 2.2;
+	text-align: center;
+}
+
+/** Sidebar **/
+
+.sidebar a{
+	color: var(--black);
+}
+
+.sidebar .widget{
+	margin-bottom: 3rem;
+}
+.sidebar-class{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 2rem;
+}
+.sidebar .sidebar-widgets-image{
+	flex: 0 0 30%;
+}
+.sidebar .side-content{
+	flex: 0 0 calc(70% - 3rem);
+}
+.sidebar .class-content {
+	padding-left: 15px;
+}
+.sidebar .class-content p{
+	font-size: 1.2rem;
+	font-weight: 700;
+	margin: 0;
+}
+.sidebar .classes-header{
+	font-size: 2.5rem;
+	margin-bottom: 2rem;
+}
+
+/** Gallery **/
+.gallery-div div#gallery-1 {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+p.date-published {
+    color: var(--white);
+    /*font-weight: bold;*/
+}
+p.date-published span {
+    color: var(--primary);
+    font-weight: bold;
+}
+.meta span {
+    font-weight: bold;
+}
+.primary-text{
+	color: var(--primary);
+}
+
+/** Categories **/
+.post-categories{
+	display: flex;
+	margin-top: 2rem;
+}
+.post-categories li{
+	margin-right: 0;
+}
+.post-categories li:last-of-type{
+	margin-right: 0;
+}
+.post-categories a{
+	margin-right: 5px;
+	border-radius: 0.5rem;
+	background-color: var(--primary);
+	padding: 1rem 1.5rem;
+	color: var(--white);
+	font-size: 1.3rem;
+	font-family: var(--mainfont);
+}
+
+li.card.gradient img {
+    max-width: 100%;
+}
+
+/** Contact form 7 **/
+.wpcf7-form p{
+	display: flex;
+	flex-wrap: wrap;
+}
+.wpcf7-form p label,
+.wpcf7-form p span{
+	flex: 0 0 100%;
+}
+.wpcf7-form p span{
+	display: flex;
+	flex-wrap: wrap;
+}
+.wpcf7-form-control{
+	flex: 0 0 100%;
+	border: 1px solid var(--lightGray);
+	padding: 1rem;
+}
+div.wpcf7 {
+    font-size: 14px;
+}
+textarea.wpcf7-form-control.wpcf7-textarea {
+    resize: none;
+}
+
+input.wpcf7-form-control.wpcf7-submit {
+    background: var(--primary);
+    color: var(--white);
+    padding: 12px;
+    border: none;
+}
+
+#map{
+	height: 300px;
+}
+
+/** Homepage **/
+/** Areas **/
+.areas-container{
+	display: flex;
+	flex-wrap: wrap;
+}
+.areas-container .area{
+	flex: 0 0 100%;
+	position: relative;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	overflow: hidden;
+}
+.areas-container .area::after{
+	content:'';
+	background: linear-gradient(
+		rgba(0,0,0,0.75),
+		rgba(0,0,0,0.75)
+	);
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+}
+.areas-container .area p{
+	position: absolute;
+	margin-left: auto;
+	color: var(--white);
+	z-index: 10;
+	font-size: 2rem;
+	font-weight: 900;
+}
+.area img{
+	height: 325px;
+	object-fit: cover;
+}
+
+/** Buttons **/
+.button-container{
+	display: flex;
+	justify-content: flex-end;
+}
+.button{
+	display: block;
+	background-color: var(--primary);
+	flex: 1;
+	text-align: center;
+	color: var(--white);
+	border-radius: 0.5rem;
+	padding: 1rem 3rem;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 1.3rem;
+}
+/*.classes-homepage{
+	background-color: var(--darkGray);
+}*/
+
+/** Instructor **/
+.instructor-list li {
+	position: relative;
+    margin: 2rem 0;
+    border-bottom: 1px solid var(--lightGray);
+}
+.instructor .content{
+	padding: 3rem;
+}
+.instructor img{
+	display: block;
+	height: 380px;
+	object-fit: cover;
+}
+.instructor .tag{
+	background-color: var(--primary);
+	padding: 0.5rem 2rem;
+	border-radius: 0.5rem;
+	color: var(--white);
+	font-family: var(--mainfont);
+	font-size: 1.5rem;
+}
+
+/** Testimonial */
+/** bx slider */
+.bx-wrapper img {
+    display: inline;
+}
+.testimonials{
+	background: linear-gradient(
+		rgba(0,0,0,0.75),
+		rgba(0,0,0,0.75)),
+	    url('http://localhost/gymdemo/wp-content/uploads/2019/10/area-equipment-1.jpg');
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: center center;
+
+	    padding: 5rem 0;
+}
+.container-testimonials{
+	max-width: 80rem;
+	margin: 0 auto;
+}
+.testimonial{
+	color: var(--white);
+}
+.testimonial blockquote{
+	position: relative;
+	padding-left: 12rem;
+}
+.testimonial blockquote::before{
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: '';
+	display: block;
+	width: 10rem;
+	height: 9rem;
+	background-image: url('http://localhost/gymdemo/wp-content/themes/gym/img/left-quote.png');
+	background-repeat: no-repeat;
+
+}
+.bx-wrapper .bx-pager.bx-default-pager a.active{
+    background: #ff5b00;
+}
+.bx-wrapper .bx-pager.bx-default-pager a {
+	background: #fff;
+}
+.bx-wrapper .bx-pager.bx-default-pager a:hover{
+	background: #ff5b00;
+}
+.testimonial-footer{
+	display: flex;
+	justify-content: center;
+}
+.testimonial-footer img{
+	width: 8rem;
+	height: 8rem;
+	border-radius: 50%;
+	margin-right: 2rem;
+}
+.testimonial-footer p{
+	font-weight: 700;
+	color: var(--primary);
+}
+/** Override bxslider */
+.bx-wrapper{
+	background: transparent;
+	box-shadow: none;
+	border: none;
+}
+
+
+/*media query*/
+@media (min-width: 768px) {
+	/** navigationbar */
+	.fixed-top{
+		position: fixed;
+		width: 100%;
+		top: 0;
+		left: 0;
+		background-color: var(--darkGray);
+		z-index: 10000;
+		padding: 1rem 5rem;	
+		transition: all 0.3s ease;
+	}
+	.fixed-top img{
+		width: 12rem;
+	}
+
+	/** bxslider */
+	.testimonial-footer{
+		justify-content: flex-end;
+	}
+	
+	/** Instructor **/
+	.instructor-list {
+	    display: flex;
+	    flex-wrap: wrap;
+	    justify-content: space-between;
+	}
+	.instructor {
+	    flex: 0 0 calc(50% - 2rem);
+	}
+	.instructor .content{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		background-color: rgba(0, 0, 0, 0.75);
+		color: var(--white);
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+
+		opacity: 0;
+		transition: opacity 0.5s ease-in-out;
+	}
+	.instructor .content h3{
+		color: var(--primary);
+	}
+	.instructor:hover .content{
+		opacity: 1;
+		transition-delay: 0.2s;
+	}
+
+	/** Buttons **/
+	.button{
+		display: inline-block;
+		flex: 0 0 auto;
+	}
+
+	/** Homepage **/
+	/** Areas **/
+	.areas-container .area{
+		flex: 0 0 25%;
+	}
+	.areas-container .area p{
+		opacity: 0;
+		transition: opacity 0.3s ease;
+	}
+	.areas-container .area:hover p{
+		opacity: 1;
+	}
+
+	/** front-header **/
+	body.home .header-grid{
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(5, 1fr);
+		height: 100%;
+	}
+	body.home .navigation-bar{
+		grid-column: 1/5;
+	}
+	.tagline{
+		grid-column: 2/4;
+		grid-row: 3;
+		margin-top: 0;
+	}
+	.tagline p{
+		font-size: 1.5rem;
+	}
+
+
+	/** Categories **/
+	.post-categories{
+		position: absolute;
+	    top: 0;
+	    left: 2rem;
+	}
+	
+
+	.card .card-content a{
+		color: var(--white);
+	}
+
+	.classes-list, .blog-entries{
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	.card{
+		flex: 0 0 calc(50% - 2rem);
+		position: relative;
+	}
+	.card .card-content{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		z-index: 1;
+	}
+	.gredient::after{
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		top : 0;
+		right: 0;
+		content: 
+
+		/* Permalink - use to edit and share this gradint */
+		/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0+1,0.65+98 */
+		background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0) 1%, rgba(0,0,0,0.65) 98%, rgba(0,0,0,0.65) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(0,0,0,0.65) 98%,rgba(0,0,0,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(0,0,0,0.65) 98%,rgba(0,0,0,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+
+	}
+
+	.page.with-sidebar{
+		display: flex;
+		justify-content: space-between;
+	}
+	.with-sidebar .page-content{
+		flex: 0 0 calc(65% - 2rem);
+	}
+	.with-sidebar .sidebar{
+		flex: 0 0 calc(25% - 2rem);		
+	}
+
+	.slicknav_menu{
+		display: none;
+	}
+
+	.footer-menu .menu{
+		display: flex;
+	}
+	.footer-menu .menu li{
+		margin-right: 2rem;
+	}
+	.footer-menu .menu li:last-of-type{
+		margin: 0;
+	}
+	.footer-menu a{
+		font-family: var(--mainfont);
+		font-size: 1.8rem;
+		color: var(--black);
+	    font-weight: bold;
+	}
+
+	.main-menu {
+		display: flex;
+	}
+	.main-menu .menu{
+		display: flex;
+		align-items: center;
+	}
+	.main-menu li{
+		margin-right: 2rem;
+	}
+	.main-menu li:last-of-type{
+		margin-right: 0;
+	}
+	.main-menu a{
+		color: var(--white);
+		font-size: 2.2rem;
+		font-family: var(--mainfont);
+		padding: 5rem 2rem;
+		font-weight: bold;
+	}
+}
+
+@media (max-width: 767px) {
+	/** Instructor */
+	.instructor img {
+	    display: block;
+	    height: 440px;
+	    object-fit: cover;
+	    max-width: 100%;
+	}
+
+	.container{
+		width: 90%;
+	}
+	h1.text-primary {
+	    font-size: 3rem;
+	}
+
+	.card-content h3 {
+	    color: black;
+	}
+	.card .card-content {
+	    padding: 0;
+	    text-align: center;
+	    background-color: white;
+	}
+	p.date-published {
+	    color: black;
+	}
+
+	.post-categories {
+	    display: flex;
+	    margin: 2rem 0px 2rem 0;
+	}
+
+	.main-menu a{
+		display: none;
+	}
+	.footer-content {
+	    display: block;
+	    text-align: center;
+	}
+	nav.footer-menu ul li a {
+	    font-size: 1.7rem;
+	    color: var(--primary);
+	    font-weight: 500;
+	}
+	.copyright {
+	    font-size: 2rem;
+	    font-weight: 500;
+	}
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+	.main-menu a {
+	    padding: 5rem 1rem;
+	    font-size: 1.5rem;
+	}
+}
+
+@media (min-width: 637px) and (max-width: 1221px) {
+	ul.instructor-list {
+	    justify-content: center;
+	}
+}
+
+@media (min-width: 1601px) {
+	.area img {
+	    height: 427px;
+	}
+}
